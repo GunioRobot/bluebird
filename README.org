@@ -11,7 +11,7 @@ histogram of all the tweets for a given query.
 
 * Credit
 
-Blue Bird's sentiment analysis R code was originally written by Jeffrey Breen. The Apache licensed code is available [[https://github.com/jeffreybreen/twitter-sentiment-analysis-tutorial-201107][here]]. The sentiment lexicon was originally compiled by Bing Liu and Minqing Hu and is available for download [[http://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html][here]]. It is included in this repository by permission of the author. 
+Blue Bird's sentiment analysis R code was originally written by Jeffrey Breen. The Apache licensed code is available [[https://github.com/jeffreybreen/twitter-sentiment-analysis-tutorial-201107][here]]. The sentiment lexicon was originally compiled by Bing Liu and Minqing Hu and is available for download [[http://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html][here]]. It is included in this repository by permission of the author.
 
 * Installation and Setup
 1. Clone this repository or click the download button in the upper
@@ -64,7 +64,7 @@ services.
 *How do I write one?* Open up =services.py= and look at the tweepy
  service for an example. The following is a skeleton for a service.
 
-#+BEGIN_SRC python 
+#+BEGIN_SRC python
 def myService(query):
     "My service, it's awesome!"
     # Magic happens: put your service code here
@@ -75,7 +75,7 @@ def myService(query):
 
 Once you've written you're service, go to the bottom of =services.py=
 and add it to the SERVICES variable:
-#+BEGIN_SRC python 
+#+BEGIN_SRC python
 SERVICES = [("Tweepy", getTweetsText), ("My Service", myService)]
 #+END_SRC
 
